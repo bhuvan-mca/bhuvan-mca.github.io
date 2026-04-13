@@ -7,14 +7,13 @@
         body {
             margin: 0;
             font-family: Arial;
-            background-color: #0f172a;
+            background: linear-gradient(to right, #0f172a, #020617);
             color: white;
         }
 
         header {
             text-align: center;
-            padding: 60px;
-            background: #020617;
+            padding: 70px 20px;
         }
 
         section {
@@ -27,7 +26,12 @@
             background: #1e293b;
             padding: 20px;
             margin: 15px 0;
-            border-radius: 10px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
         }
 
         .btn {
@@ -37,7 +41,11 @@
             color: black;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 10px;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
         }
     </style>
 </head>
@@ -45,24 +53,32 @@
 <body>
 
 <header>
-    <h1>Bhuvan</h1>
+    <h1>Bhuvan R</h1>
     <p>MCA Student | Web Developer | Cybersecurity Enthusiast</p>
-    <a class="btn" href="#">Download Resume</a>
+
+    <!-- Resume Button -->
+    <a class="btn" href="resume.pdf" target="_blank">Download Resume</a>
+
+    <br><br>
+
+    <!-- Social Links -->
+    <a class="btn" href="https://linkedin.com/in/bhuvan-mca" target="_blank">LinkedIn</a>
+    <a class="btn" href="https://github.com/bhuvan-mca" target="_blank">GitHub</a>
 </header>
 
 <section>
     <h2>About Me</h2>
     <p>
         I am an MCA student passionate about web development, cybersecurity,
-        and building real-world applications. I enjoy learning new technologies
-        and solving practical problems.
+        and building real-world applications. I enjoy solving problems and 
+        continuously improving my technical skills.
     </p>
 </section>
 
 <section>
     <h2>Skills</h2>
     <div class="card">
-        HTML, CSS, JavaScript, Python, SQL, Git, Kali Linux
+        HTML, CSS, JavaScript, Python, Java, SQL, Git, GitHub, Kali Linux, Network Security
     </div>
 </section>
 
@@ -71,30 +87,40 @@
 
     <div class="card">
         <h3>Cyber Attack & Defense Simulator</h3>
-        <p>Simulation of attack and defense techniques in cybersecurity.</p>
+        <p>Simulated real-world cyber attack and defense scenarios.</p>
+        <a href="#" class="btn">View Code</a>
+    </div>
+
+    <div class="card">
+        <h3>Federated Learning Simulator</h3>
+        <p>Built a decentralized learning model without sharing raw data.</p>
+        <a href="#" class="btn">View Code</a>
     </div>
 
     <div class="card">
         <h3>Hostel Management System</h3>
-        <p>System to manage hostel operations and student records.</p>
+        <p>System to manage student records and room allocation.</p>
+        <a href="#" class="btn">View Code</a>
     </div>
 
     <div class="card">
         <h3>Pharmacy Management System</h3>
-        <p>Application to manage medicine inventory and billing.</p>
+        <p>Application to manage inventory and billing.</p>
+        <a href="#" class="btn">View Code</a>
     </div>
 
     <div class="card">
         <h3>AI Story Generator</h3>
         <p>Generates stories based on user input.</p>
+        <a href="#" class="btn">View Code</a>
     </div>
 
 </section>
 
 <section>
     <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-    <p>LinkedIn: add your link</p>
+    <p>Email: bhuvanbhuvi661166@gmail.com</p>
+    <p>LinkedIn: https://linkedin.com/in/bhuvan-mca</p>
 </section>
 
 </body>
